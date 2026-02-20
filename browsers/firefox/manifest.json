@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "LinkSaver",
+  "version": "0.1.0",
+  "description": "Save all open tabs as bookmarks in a date-stamped folder.",
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    },
+    "default_title": "Save all tabs to bookmarks"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "linksaver@linksaver.dev",
+      "strict_min_version": "58.0"
+    }
+  }
+}
